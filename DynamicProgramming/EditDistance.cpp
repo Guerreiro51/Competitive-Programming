@@ -32,10 +32,15 @@ int strDistance(const string& fixedString, const string& mutableString) {
 }
 
 int main() {
-    string fixedString, mutableString;
-    cin >> fixedString >> mutableString;
+    size_t numberOfTestCases;
+    cin >> numberOfTestCases;
 
-    cout << strDistance(fixedString, mutableString) << '\n';
+    while (numberOfTestCases--) {
+        string fixedString, mutableString;
+        cin >> fixedString >> mutableString;
+
+        cout << strDistance(fixedString, mutableString) << '\n';
+    }
 
     return 0;
 }
